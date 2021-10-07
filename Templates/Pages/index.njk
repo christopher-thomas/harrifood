@@ -1,0 +1,71 @@
+<!-- index.njk -->
+{% extends "layout.njk" %}
+
+{% block content %}
+  <section class="banner">
+    <div class="centred">
+      <div class="banner__centred">
+        <h1>A collection of my favouritest foods</h1>
+        <a href="#" class="button">All recipes</a>
+      </div>
+    </div>
+  </section>
+  <section class="favourites">
+    <div class="centred">
+      <h2 class="section__heading">A few favourites...</h2>
+      <div class="grid-container">
+      <div class="grid">
+        <a href="#" class="card nostyle">
+          <div class="card__image">
+            <img src="/images/home/favourite-1.jpg"/>
+          </div>
+          <div class="card__text">
+            <div>
+              <div>
+              Vegetarian pecadillo with hot fresh chilllies
+              </div>
+              <div>
+              30 minutes, 455kcal pp
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card nostyle">
+          <div class="card__image">
+            <img src="/images/home/favourite-2.jpg"/>
+          </div>
+          <div class="card__text">
+            <div>
+              <div>
+              Quiche lorraine with essence of fiery housecat
+              </div>
+              <div>
+              30 minutes, 455kcal pp
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card nostyle">
+          <div class="card__image">
+            <img src="/images/home/favourite-3.jpg"/>
+          </div>
+          <div class="card__text">
+            <div>
+              <div>
+              Steamed tortoise hide sandwiches
+              </div>
+              <div>
+              30 minutes, 455kcal pp
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      </div>
+      
+      <div class="button-container">
+        <a href="#" class="button">More recipes</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

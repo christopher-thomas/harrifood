@@ -1,0 +1,96 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="scripts/header.js"></script>
+    </head>
+    <body>
+        <!-- header.njk -->
+
+
+    <header>
+        <div class="centred header-content"> 
+            <div class="logo"> 
+                harrifood.com
+            </div>
+            <nav>
+                <svg id="main-menu-open"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/>
+                </svg>
+                
+                <div class="menu" id="main-menu">
+                    <div class="menu__heading">
+                        <div class="centred">
+                            <div class="menu__heading-text">Menu</div>
+                            <svg viewBox="0 0 24 24" id="main-menu-close">
+                                <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="menu__body">
+                        <div class="centred"> 
+                            <ul>
+                                <li>About</li>
+                                <li>Recipes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+        
+
+    <section class="recipes">
+
+        <div class="centred">
+            <h2>Recipes</h2>
+        </div>
+    </section>
+    <div class="filter-button">
+        Filter Recipes
+    </div>
+    <div class="filter-panel">
+        <div class="centred">
+            <h2>Filter Recipes</h2>
+            <p>matching 40/40 recipes</p>
+            <br />
+            <div class="filter-item">
+                <div class="filter-item__label">Category</div>
+                <div>
+                    <select>
+                        <option>
+                            All
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__label">Region</div>
+                <div>
+                    <select>
+                        <option>
+                            All
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__label">Cooking time</div>
+                <div>
+                    <select>
+                        <option>
+                            Any
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>

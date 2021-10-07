@@ -1,0 +1,34 @@
+Cuisine
+- American
+- British
+- Carribbean
+- Chinese
+- French
+- Greek
+- Indian
+- Italian
+- Japanese
+- Meditteranean
+- Mexican
+- Moroccan
+- Spanish
+- Thai
+- Turkish
+- Vietnamese
+
+Type
+- Breakfast
+- Lunch
+- Dinner
+- Sides
+- Snacks
+
+Search bar
+
+Number of recipes
+
+Applied filters
+
+Harri's favourites
+
+Share options and anlytics

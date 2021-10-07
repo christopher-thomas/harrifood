@@ -1,0 +1,244 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="scripts/header.js"></script>
+    </head>
+    <body>
+        <!-- header.njk -->
+
+
+    <header>
+        <div class="centred header-content"> 
+            <div class="logo"> 
+                harrifood.com
+            </div>
+            <nav>
+                <svg id="main-menu-open"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/>
+                </svg>
+                
+                <div class="menu" id="main-menu">
+                    <div class="menu__heading">
+                        <div class="centred">
+                            <div class="menu__heading-text">Menu</div>
+                            <svg viewBox="0 0 24 24" id="main-menu-close">
+                                <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="menu__body">
+                        <div class="centred"> 
+                            <ul>
+                                <li>About</li>
+                                <li>Recipes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+        
+    <section class="recipe-header">
+        <div class="centred">
+            <div class="recipe-header__image">
+                <div></div>
+                <img src="/images/home/favourite-2.jpg"/>
+            </div>
+            <div class="recipe-header__details">
+                <div class="centred">
+                    <h1>
+                    Quiche lorraine
+                    </h1>
+                    <div class="recipe-header__attributes">
+                        <div class="label-value">
+                            <svg class="label-value__label" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            <span class="label-value__value">
+                            30 mins
+                        </span>
+                        </div>
+                        <div class="label-value">
+                            <svg class="label-value__label" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
+                                <g><rect fill="none" height="24" width="24"/></g>
+                                <g><g/>
+                                    <g>
+                                        <g><path d="M16.67,13.13C18.04,14.06,19,15.32,19,17v3h5v-3 C23,14.82,19.43,13.53,16.67,13.13z" fill-rule="evenodd"/></g>
+                                        <g><circle cx="9" cy="8" fill-rule="evenodd" r="4"/></g>
+                                        <g><path d="M15,12c2.21,0,4-1.79,4-4c0-2.21-1.79-4-4-4c-0.47,0-0.91,0.1-1.33,0.24 C14.5,5.27,15,6.58,15,8s-0.5,2.73-1.33,3.76C14.09,11.9,14.53,12,15,12z" fill-rule="evenodd"/></g>
+                                        <g><path d="M9,13c-2.67,0-8,1.34-8,4v3h16v-3C17,14.34,11.67,13,9,13z" fill-rule="evenodd"/></g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="label-value__value">
+                            4-6 people
+                            </span>
+                        </div>
+                        <div class="label-value">
+                            <svg class="label-value__label" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+                            </svg>
+                            <span class="label-value__value">
+                            500/800kcal
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rich-text-section">
+        <div class="centred">
+            <div class="rich-text">
+                <div class="rich-text-section__content">
+                    <h2>Cooking notes</h2>
+                    <p>
+                    Some recipes add a layer of sliced potatoes and sliced courgette
+                    </p>
+                    <p></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipiscing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rich-text-section m-grey">
+        <div class="centred">
+            <div class="rich-text">
+                <div class="rich-text-section__content">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>
+                            Olive oil
+                        </li>
+                        <li>Smoked salt</li>
+                        <li>Black pepper</li>
+                        <li>1 medium onion</li>
+                        <li>1 medium celery stick</li>
+                        <li>400g Vegetarian mince</li>
+                        <li>2 garlic cloves</li>
+                        <li>1 tbsp soy sauce</li>
+                        <li>1 tbsp smoked paprika</li>
+                        <li>1 tbsp za’atar spice</li>
+                        <li>1 stick sweet cinnamon</li>
+                        <li>Whole nutmeg to grate</li>
+                        <li>250g Puy green lentil</li>
+                        <li>2 tbsp tomato purée</li>
+                        <li>1 vegetable stock</li>
+                        <li>400g canned chopped tomatoes</li>
+                        <li>2 medium aubergines (550g approx.) </li>
+                        <li>568ml skimmed milk</li>
+                        <li>2 bay leaves</li>
+                        <li>2 large eggs</li>
+                        <li>30g cornflour</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rich-text-section">
+        <div class="centred">
+            <div class="rich-text">
+                <div class="rich-text-section__content">
+                    <h2>Cooking method</h2>
+                    <h3>1) Vegetarian Ragu Sauce</h3>
+                    <h5>Large saucepan/frying pan</h5>
+                    <p>1 tbsp olive oil<br/>
+                    1 medium onion, finely diced<br/>
+                    1 celery stick, finely diced<br/>
+                        <span class="bold">
+                            <i>Sweat until soft</i>
+                        </span>
+                    </p>
+                    <h5>Add</h5>
+                    <p>
+                        400g Vegetarian mince<br/>
+                        2 garlic cloves (finely diced)<br/>
+                        1 tbsp soy sauce<br/>
+                        1 tbsp smoked paprika<br/>
+                        1 tbsp za’atar spice<br/>
+                        1 stick sweet cinnamon<br/>
+                        Grating of nutmeg<br/>
+                        Smoked salt and black pepper<br/>
+                        <span class="bold">
+                            <i>Fry until mince is firm</i>
+                        </span>
+                    </p>
+                    <h5>Stir in</h5>
+                    <p>
+                        250g Puy green lentil<br/>
+                        2 tbsp tomato purée<br/>
+                        1 vegetable stock<br/>
+                        400g canned chopped tomatoes<br/>
+                        400ml water<br/>
+                        <span class="bold">
+                            <i>Simmer for 20 minutes</i>
+                        </span>
+                    </p>
+                    <h3>2) Roasted Vegetables</h3>
+                    <h5>Prepare for 30 minutes</h5>
+                    <p>
+                        2 medium aubergines (550g approx.)<br/>
+                        Cut into slices (2cm approx.)<br/>
+                        Score the flesh<br/>
+                        Cover generously with salt<br/>
+                        Leave to ‘sweat out’ bitterness for 30 minutes and pat dry<br/>
+                    </p>
+                    <h5>Oven bake for 30 minutes</h5>
+                    <p>
+                        Oil the aubergines<br/>
+                        Place on baking sheet<br/>
+                        Gas mark 7<br/>
+                        Bake for 30 minutes until coloured<br/>
+                    </p>
+                    <h3>3) Bechamel</h3>
+                    <h5>Saucepan, low heat</h5>
+                    <p>
+                        568ml skimmed milk<br/>
+                        2 bay leaves<br/>
+                        Grating of nutmeg<br/>
+                        Salt to taste<br/>
+                        <span class="bold">
+                            <i>Simmer until warm but not boiling</i>
+                        </span>
+                    </p>
+                    <h5>once warm</h5>
+                    <p>In a separate bowl add some of the warm milk and whisk in two eggs.</p>
+                    <p>Remove the bay leaves from saucepan, whisk 30g cornflour with a tbsp of water and add to the saucepan</p>
+                    <p>
+                        <span class="bold">
+                            <i>Simmer until thick</i>
+                        </span>
+                    </p>
+                    <h5>Once thickened</h5>
+                    <p>Turn down the heat and stir in The egg mixture.</p>
+                    <p>
+                        <span class="bold">
+                            <i>Whisk until thick and combined</i>
+                        </span>
+                    </p>
+                    <h3>4) Assemble and bake</h3>
+                    <p>
+                        Spoon the Ragu into a deep oven proof casserole dish<br/>
+                        Lay the cooked aubergines on top of the Ragu<br/>
+                        Spoon the fluffy bechamel on top<br/>
+                        Sprinkle flaky salt over the top<br/>
+                        <span class="bold">
+                            <i>Bake Gas Mark 6 30 minutes</i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </body>
+</html>

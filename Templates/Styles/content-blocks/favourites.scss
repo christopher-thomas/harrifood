@@ -1,0 +1,79 @@
+@import "../references/mixins";
+
+.favourites {
+    @include section;
+    background-color: rgb(240, 240, 240);
+
+    .centred {
+
+        text-align: center;
+
+    }
+
+    .grid-container{
+
+        max-width: 1000px;  
+        margin:0 auto;
+        text-align: left;
+
+    }
+
+    .button-container{
+
+        text-align: center;
+        margin-top:60px;
+
+        .button{
+
+            margin:0 auto;
+            padding:20px 20px;
+            display: block;
+            
+            
+
+        }
+
+        @media(min-width: $screen-sm){
+
+            margin-top:80px;
+
+            .button{
+
+                
+            display: inline-block;
+            padding:20px 100px;
+                
+    
+            }
+    
+        }
+
+        @media(min-width: $screen-md){
+
+            margin-top:100px;
+
+        }
+
+    }
+
+    @media(min-width: $screen-sm){
+
+        .grid-container{
+
+            margin:0px 40px;
+    
+        }
+
+    }    
+
+    @media(min-width: $screen-lg){
+
+        .grid-container{
+
+            margin:0 auto;
+    
+        }
+
+    }
+
+}

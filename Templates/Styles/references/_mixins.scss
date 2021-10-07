@@ -1,0 +1,113 @@
+@mixin section {
+    padding: 80px 0px;
+
+    h2.section__heading {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 60px;
+        color: $cHeading;
+    }
+
+    &.m-grey {
+        background-color: $p4;
+    }
+
+    @media (min-width: $screen-sm) {
+        padding: 100px 0px;
+
+        h2.section__heading {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+@mixin richText {
+    font-size: 1.2rem;
+
+    *:first-child {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    p {
+        line-height: 2rem;
+        color: rgb(140, 140, 140);
+        margin: 5px 0px;
+        min-height: 10px;
+    }
+
+    .bold {
+        //font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        color: $cBold;
+    }
+
+    h1,
+    h2 {
+        margin-top: 60px;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 30px 0px 10px;
+    }
+
+    ul {
+        list-style: none; /* Remove default bullets */
+        line-height: 2rem;
+        padding: 0px 0px 0px 20px;
+        margin: 5px 0px;
+        color: $cText;
+    }
+
+    ul li::before {
+        content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: $p3; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        font-size: 2rem;
+        position: relative;
+        top: 5px;
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1.7rem; /* Also needed for space (tweak if needed) */
+        margin-left: -0.7rem; /* Also needed for space (tweak if needed) */
+    }
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: $p3;
+    }
+}
+
+@mixin centred {
+    margin: 0 30px;
+
+    @media (min-width: $screen-xs) {
+        margin: 0 40px;
+    }
+
+    @media (min-width: $screen-sm) {
+        margin: 0 50px;
+    }
+
+    @media (min-width: $screen-lg) {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    @media (min-width: $screen-xl) {
+        margin: 0 auto;
+        max-width: 1400px;
+    }
+}
+
+@mixin shadow($value){
+
+    box-shadow: $value;
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+
+}

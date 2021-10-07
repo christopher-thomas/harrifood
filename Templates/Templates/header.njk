@@ -1,0 +1,37 @@
+<!-- header.njk -->
+
+{% block header %}
+    <header>
+        <div class="centred header-content"> 
+            <div class="logo"> 
+                harrifood.com
+            </div>
+            <nav>
+                <svg id="main-menu-open"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/>
+                </svg>
+                {# <svg id="main-menu-open" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"/>
+                </svg> #}
+                <div class="menu" id="main-menu">
+                    <div class="menu__heading">
+                        <div class="centred">
+                            <div class="menu__heading-text">Menu</div>
+                            <svg viewBox="0 0 24 24" id="main-menu-close">
+                                <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="menu__body">
+                        <div class="centred"> 
+                            <ul>
+                                <li>About</li>
+                                <li>Recipes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+{% endblock %}

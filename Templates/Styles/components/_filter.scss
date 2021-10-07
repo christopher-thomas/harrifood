@@ -1,0 +1,71 @@
+.filter-button {
+    background-color: $p3;
+    color: white;
+    text-align: center;
+    padding: 24px 0px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    font-size: 1.2rem;
+    z-index: 5;
+}
+
+.filter-panel {
+    position: fixed;
+    height: 100vh;
+    //height: stretch;
+    width: 100vw;
+    background-color: white;
+    top: 0px;
+    z-index: 1;
+    overflow-y: auto;
+    display: none;
+    opacity: 1;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    
+    &.filter-panel--visible{
+
+        display: block;
+        opacity: 1;
+
+    }
+
+    p {
+        color: $cText;
+    }
+
+    .centred{
+
+        padding-bottom: 180px;
+
+    }
+
+}
+
+.filter-item {
+    margin-bottom: 25px;
+
+    .filter-item__label {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    select {
+        -moz-appearance: none; /* Firefox */
+        -webkit-appearance: none; /* Safari and Chrome */
+        appearance: none;
+        width: 100%;
+        border-radius: 0px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-color: $cLine;
+        background-image: url("/images/select-arrow.fw.png");
+        background-repeat: no-repeat;
+        background-position: right 20px center;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

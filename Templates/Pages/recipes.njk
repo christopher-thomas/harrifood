@@ -1,0 +1,51 @@
+<!-- recipe.njk -->
+{% extends "layout.njk" %}
+{% block content %}
+
+    <section class="recipes">
+
+        <div class="centred">
+            <h2>Recipes</h2>
+        </div>
+    </section>
+    <div class="filter-button">
+        Filter Recipes
+    </div>
+    <div class="filter-panel">
+        <div class="centred">
+            <h2>Filter Recipes</h2>
+            <p>matching 40/40 recipes</p>
+            <br />
+            <div class="filter-item">
+                <div class="filter-item__label">Category</div>
+                <div>
+                    <select>
+                        <option>
+                            All
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__label">Region</div>
+                <div>
+                    <select>
+                        <option>
+                            All
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-item__label">Cooking time</div>
+                <div>
+                    <select>
+                        <option>
+                            Any
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

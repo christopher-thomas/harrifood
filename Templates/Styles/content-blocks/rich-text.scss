@@ -1,0 +1,11 @@
+.rich-text-section{
+
+    @include section;
+    
+    .rich-text-section__content{
+
+        @include richText;
+
+    }
+
+}

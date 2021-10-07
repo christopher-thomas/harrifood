@@ -1,0 +1,114 @@
+.recipe-header {
+    color: white;
+    background-color: $p2;
+    background-image: url("/images/black-linen.png");
+    -webkit-box-shadow: inset 4px 4px 7px 0px rgba(0,0,0,0.47); 
+box-shadow: inset 4px 4px 7px 0px rgba(0,0,0,0.47);
+
+    > .centred {
+        margin: 0px 0px;
+    }
+
+    .recipe-header__image {
+        position: relative;
+        display: block;
+        width: 100%;
+        -webkit-box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.47); 
+box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.47);
+
+//         > div {
+//             position: absolute;
+//             top: 0px;
+//             left: 0px;
+//             width:100%;
+//             height:100%;
+//             -webkit-box-shadow: inset 0px 0px 15px -1px #000000; 
+// box-shadow: inset 0px 0px 15px -1px #000000;
+//         }
+
+        image {
+            position: relative;
+            display: block;
+        }
+    }
+
+    .recipe-header__details {
+        padding: 42px 0px 46px;
+    }
+
+    h1 {
+        //font-size: 3rem;
+        line-height: 3.2rem;
+        color: $cHeading;
+        margin: 0px 0px 24px 0px;
+        color: white;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    @media (min-width: $screen-sm) {
+        padding: 50px 0px 50px;
+        @include shadow(0px 0px 5px 0px rgba(100, 11, 60, 1) inset);
+
+        > .centred {
+            @include centred;
+            display: flex;
+        }
+
+        .recipe-header__image {
+            max-width: 400px;
+        }
+
+        .recipe-header__details {
+            padding: 24px 50px 36px;
+
+            .centred {
+                margin: 0px 0px;
+            }
+        }
+    }
+
+    @media (min-width: $screen-md) {
+        .recipe-header__image {
+            max-width: 400px;
+        }
+    }
+
+    @media (min-width: $screen-lg) {
+        .recipe-header__image {
+            max-width: 450px;
+        }
+    }
+}
+
+.recipe-header__attributes {
+    padding-left: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+
+    .label-value {
+        margin-top: 10px;
+    }
+}
+
+.label-value {
+    display: flex;
+    align-items: center;
+
+    svg.label-value__label {
+        $size: 26px;
+        fill: white;
+        height: $size;
+        width: $size;
+    }
+
+    .label-value__value {
+        color: white;
+        padding: 0px 20px 0px 10px;
+        font-size: 1.2rem;
+    }
+}
